@@ -1,0 +1,31 @@
+body{
+    background-color:#435cdb;
+  }
+  #title{
+    text-align:center;
+  }
+  #description{
+    text-align:center;
+  }
+  #number{
+    width:200;
+  }
+  
+  #inputs{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  }
+  #rectangle{
+    
+      width:500px;
+      height:800px;
+      background:#ec9112;
+      display:flex;
+      flex-direction:column;
+      position:absolute;
+      left:550px;
+      z-index: -1;
+      border-radius:25px;
+  
+  }

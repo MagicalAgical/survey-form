@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<script>
+  function log() {
+  console.log('Clicked');
+};
+</script>
+<body>
+  <main>
+    <div id="rectangle"></div>
+
+    <section id="headers">
+      <h1 id="title"> Survey Form </h1>
+      <p id="description"> Fill out your info here!</p>
+      </section>
+      
+      <section id="inputs">
+        <form id="survey-form">
+          <label for="name" id="name-label"> Type your name: </label>
+          <input type="text" id="name" placeholder="First and Last Name" required> 
+          <br>
+          <br>
+          <br>
+          <label for="email" id="email-label"> Type your email: </label>
+          <input type="email" id="email" placeholder="xxxxx@xxxx.xxx" required> 
+          <br>
+          <br>
+          <br>
+          <label for="number" id="number-label"> Type your number: </label>
+          <input type="number" id="number"  min="0" max="9999999999" maxlength="10"placeholder="No spaces between numbers!" required> 
+          <br>
+          <br>
+          <br>
+          <p> Select Your Gender </p>
+          <select id="dropdown">
+            <option> Male </option>
+            <option> Female </option>
+            <option> Other </option>
+          </select>
+          <br>
+          <br>
+          <br>
+
+          <label for="country" id="radio-label"> Where are you from? </label>
+          <br>
+          <label for="country" id="radio-label"> United States of America </label>
+          <input type="radio" id="USA" name="country" value="USA">
+          <br>
+          <label for="country" id="radio-label"> Outside of USA </label>
+          <input type="radio" id="NON-USA" name="country" value="NON-USA"> 
+          <br>
+          <br>
+          <br>
+
+          <label for="interests"> Select your Interests </label>
+          <br>
+          <input type="checkbox" value="Computer Science">
+          <label> Computer Science </label>
+          <br>
+          <input type="checkbox" value="Computer Engineering">
+          <label> Computer Engineering </label>
+          <br>
+          <input type="checkbox" value="Education">
+          <label> Education </label>
+          <br>
+          <input type="checkbox" value="Medical">
+          <label> Medical </label>
+          <br>
+          <input type="checkbox" value="Engineering">
+          <label> Engineering </label>
+          <br>
+          <input type="checkbox" value="Other">
+          <label> Other </label>
+          <br>
+          <br>
+          <br>
+
+          <label for="comments"> Let us know with any questions you have!</label>
+          <br>
+         <textarea id="comments" placeholder="Let us know with any questions you have!">  </textarea>
+
+         <button onclick=log() id="submit" type="submit"> Submit! </button>
+          
+          
+          
+          
+
+
+        </form>
+      </section>  
+  </main>
+  </body>
